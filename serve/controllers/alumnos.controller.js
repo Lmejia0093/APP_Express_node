@@ -11,15 +11,18 @@ export const getalumnos = async (req, res) => {
 export const updatealumnos = async (req, res) => {
   // console.log(`este dato quiero ver ${req.params.id}`)
   // console.log(req.body.nombre)
+ 
   try {
     const result = await pool.query(
+
+
       "UPDATE test SET codigo = ? ,nombre = ? , fecha =?,anio=?  WHERE codigo=? ",
       [
         req.body.codigo,
         req.body.nombre,
         req.body.fecha,
         req.body.anio,
-        req.params.id,
+        req.params.codigo,
       ]
     );
 
