@@ -1,2 +1,4 @@
 # proyectoDavid
-# NPM RUN dev para iniciar a correr el server
+# NPM I
+# NPM RUN dev para iniciar a correr el server 
+
