@@ -30,6 +30,7 @@ export const updatealumnos = async (req, res) => {
 };
 
 export const createalumnos = async (req, res) => {
+  console.log(req.body)
   try {
     const { codigo, nombre, fecha, anio } = req.body;
     const [result] = await pool.query(
