@@ -15,7 +15,7 @@ export const updatealumnos = async (req, res) => {
   try {
     const result = await pool.query(
 
-
+//prueba
       "UPDATE test SET codigo = ? ,nombre = ? , fecha =?,anio=?  WHERE codigo=? ",
       [
         req.body.codigo,
